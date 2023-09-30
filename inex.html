@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="first__page">
+            <div class="contain">
+                <nav>
+                    <div class="one">
+                        <img src="./dd-removebg.png" alt="">
+                        <div class="lists">
+                            <li class="one__home"><a href="#">Home</a></li>
+                            <li class="one__about"><a href="#">About</a></li>
+                            <li class="one__contactUs"><a href="#">Contact Us</a></li>
+                        </div>
+                        <input id="seearch" type="text" placeholder="search" onchange="search(event)" >            
+                    </div>
+                </nav>
+                <div class="first__picture">
+                </div>
+                <img class="img2" src="/bg.jpg" alt="">
+                
+                <!--
+                    
+                    Movies from Backend JSON 
+                -->
+                
+            </div>
+                <div class="filters">
+                    <select onchange="dropDown(event)" name="Drop" id="drop__filter">
+                        <option disabled selected>Select</option>
+                        <option value='Movie' >Movies</option>
+                        <option value='Series'>Series</option>
+                        <option value='Episode'>Episode</option>
+                    </select>
+                    <div>
+                        <input type="range" id="range__filter" min="1990" max="2023" value="" onchange="slider(event)" >
+                        <div class="year">
+                            <div class="drop-year"></div>
+                            <h1 class="val">select year</h1>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="movies">
+                <div class="movies__contain">
+                    <div class="movies__row">
+                    <figure class="figure__img">
+                    <img class="img__three-skeleton" alt="">
+                    </figure>
+                    <h3 class="h3-skeleton"></h3>
+                    <p></p>
+                    </div>
+                    </div>
+                <div class="movies__contain">
+                    <div class="movies__row">
+                    <figure class="figure__img">
+                    <img class="img__three-skeleton" alt="">
+                    </figure>
+                    <h3 class="h3-skeleton"></h3>
+                    <p></p>
+                    </div>
+                    </div>
+                <div class="movies__contain">
+                    <div class="movies__row">
+                    <figure class="figure__img">
+                    <img class="img__three-skeleton" alt="">
+                    </figure>
+                    <h3 class="h3-skeleton"></h3>
+                    <p></p>
+                    </div>
+                    </div>
+                <div class="movies__contain">
+                    <div class="movies__row">
+                    <figure class="figure__img">
+                    <img class="img__three-skeleton" alt="">
+                    </figure>
+                    <h3 class="h3-skeleton"></h3>
+                    <p></p>
+                    </div>
+                    </div>
+                <div class="movies__contain">
+                    <div class="movies__row">
+                    <figure class="figure__img">
+                    <img class="img__three-skeleton" alt="">
+                    </figure>
+                    <h3 class="h3-skeleton"></h3>
+                    <p></p>
+                    </div>
+                    </div>
+                <div class="movies__contain">
+                    <div class="movies__row">
+                    <figure class="figure__img">
+                    <img class="img__three-skeleton" alt="">
+                    </figure>
+                    <h3 class="h3-skeleton"></h3>
+                    <p></p>
+                    </div>
+                    </div>
+
+            
+        </section>
+    </body>
+    <script src="./index.js" ></script>
+    </html>
