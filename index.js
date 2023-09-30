@@ -37,7 +37,7 @@ async function search(event){
     const Default= 'a'
     const movies = await fetch(`https://www.omdbapi.com/?apikey=180f5a56&s=${search || Default}`)
     const movie = await movies.json();
-    const moviess = movie.Search
+    const moviess = movie.Search.slice(0,6)
     const movieEl = document.querySelector(".movies")
     movieEl.innerHTML=moviess.map((post)=> showMovies(post)).join('')
     localStorage.setItem("search", search)    
@@ -52,7 +52,7 @@ async function slider(event){
         const Default= 'america'
         const movies = await fetch(`https://www.omdbapi.com/?apikey=180f5a56&y=${id}&s=${search || Default}`)
         const movie = await movies.json();
-        const moviess = movie.Search
+        const moviess = movie.Search.slice(0,6)
         const movieEl = document.querySelector(".movies")
         movieEl.innerHTML=moviess.map((post)=> showMovies(post)).join('')
         localStorage.setItem("id", id)
@@ -65,7 +65,7 @@ async function slider(event){
         const Default= 'america'
         const movies = await fetch(`https://www.omdbapi.com/?apikey=180f5a56&y=${id}&s=${search || Default}&type=${val}`)
         const movie = await movies.json();
-        const moviess = movie.Search
+        const moviess = movie.Search.slice(0,6)
         const movieEl = document.querySelector(".movies")
         movieEl.innerHTML=moviess.map((post)=> showMovies(post)).join('')
         console.log(moviess)
