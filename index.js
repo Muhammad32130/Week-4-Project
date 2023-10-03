@@ -18,7 +18,7 @@ function showMovies(post){
             return `<div class="movies__contain">
             <div class="movies__row">
             <img class="img__three" src=${post.Poster} alt="">
-            <h3>${post.Title}</h3>
+            <h3 class="mov_name">${post.Title}</h3>
             <p></p>
             </div>
             </div>`
